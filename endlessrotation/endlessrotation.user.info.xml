@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+  <meta>
+    <author>James Croft</author>
+    <documentationURL></documentationURL>
+    <sampleQuery>select * from {table} where id='crofty'</sampleQuery>
+  </meta>
+  <bindings>
+    <select produces="JSON">
+      <urls>
+        <url>http://api.endlessrotation.com/v1/{id}</url>
+      </urls>
+      <inputs>
+        <key id="id" type="xs:string" paramType="path" required="true"/>
+      </inputs>
+    </select>
+  </bindings>
+</table>
